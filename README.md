@@ -14,15 +14,7 @@ AutoReconX is a Python-based automated reconnaissance tool developed for learnin
 - Automated report generation
 - Encrypted result storage for security
 
-## Project Structure
 
-AutoReconX/
-│
-├── cli/
-├── scanner/
-├── enumeration/
-├── reporting/
-├── crypto/
 
 
 ## Requirements
