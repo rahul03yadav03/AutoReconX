@@ -1,8 +1,11 @@
 import socket
 import threading
+import colorama
+colorama.init(autoreset=True)
+
 
 def port_scanner(target, start_port, end_port):
-    """
+    colorama.Fore.GREEN + """
     Scan ports on target from start_port to end_port
     Returns list of open ports
     """

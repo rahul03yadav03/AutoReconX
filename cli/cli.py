@@ -2,6 +2,9 @@ import argparse
 import sys
 import os
 import re
+import colorama
+colorama.init(autoreset=True)
+
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -36,14 +39,14 @@ def validate_ip(ip):
 
 def get_interactive_input():
     """Get target and ports from user interactively"""
-    print("\n=== AutoReconX Interactive Mode ===")
-    target = input("Please enter your target: ")
+    print(colorama.Fore.GREEN + "\n=== AutoReconX Interactive Mode ===")
+    target = input(colorama.Fore.BLUE + "Please enter your target: ")
     
     while not validate_ip(target):
-        print("[-] Invalid IP format")
-        target = input("Please enter your target: ")
+        print(colorama.Fore.RED + "[-] Invalid IP format")
+        target = input(colorama.Fore.BLUE + "Please enter your target: ")
     
-    port_range = input("Please enter port range (default 1-2000): ").strip()
+    port_range = input(colorama.Fore.BLUE + "Please enter port range (default 1-2000): ").strip()
     if not port_range:
         port_range = "1-2000"
     

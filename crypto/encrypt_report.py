@@ -1,9 +1,12 @@
 import hashlib
+import colorama
+colorama.init(autoreset=True)
+
 
 def hash_analyzer():
 
     try:
-        data = input("[+] enter text or password to analyze: ").encode()
+        data = input(colorama.Fore.LIGHTBLUE_EX + "[+] enter text or password to analyze: ").encode()
         md5_hash = hashlib.md5(data).hexdigest()
         sha1_hash = hashlib.sha1(data).hexdigest()
         sha256_hash = hashlib.sha256(data).hexdigest()
@@ -15,4 +18,4 @@ def hash_analyzer():
         print(f"SHA256:  {sha256_hash}")
 
     except Exception as e:
-        print("[-] Error during hash analysis: ",e)
+        print(colorama.Fore.RED + "[-] Error during hash analysis: ",e)
