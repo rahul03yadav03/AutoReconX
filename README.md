@@ -21,13 +21,12 @@ AutoReconX is a Python-based automated reconnaissance tool developed for learnin
 
 - Python 3.x
 - Nmap installed on your system
-- Required Python library:
+
+## clone
+ - git clone https://github.com/rahul03yadav03/AutoReconX.git
 
 
-
-pip install cryptography
-
-## Usage
+# Usage
 
 Run the tool using:
 
