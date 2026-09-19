@@ -22,7 +22,7 @@ AutoReconX is a Python-based automated reconnaissance tool developed for learnin
 - Python 3.x
 - Nmap installed on your system
 
-## clone
+## Clone
  - git clone https://github.com/rahul03yadav03/AutoReconX.git
 
 
